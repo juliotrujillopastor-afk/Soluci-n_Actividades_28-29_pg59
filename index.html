@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resolución Detallada - Actividades 28 y 29</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-light: #3b82f6;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --success: #15803d;
+      --success-bg: #f0fdf4;
+      --error: #b91c1c;
+      --error-bg: #fef2f2;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      border-bottom: 3px solid var(--primary-light);
+      padding-bottom: 0.5rem;
+    }
+
+    h2 {
+      color: var(--primary);
+      background: #eff6ff;
+      padding: 0.75rem 1rem;
+      border-left: 5px solid var(--primary-light);
+      border-radius: 4px;
+      margin-top: 2.5rem;
+      font-size: 1.4rem;
+    }
+
+    .exercise-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .statement {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .step-title {
+      font-weight: 600;
+      color: #334155;
+      margin-top: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .math-block {
+      background: #f1f5f9;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.05rem;
+      overflow-x: auto;
+      margin: 0.5rem 0;
+    }
+
+    .check-box {
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+    }
+
+    .valid {
+      background-color: var(--success-bg);
+      border: 1px solid #bbf7d0;
+      color: var(--success);
+    }
+
+    .invalid {
+      background-color: var(--error-bg);
+      border: 1px solid #fecaca;
+      color: var(--error);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-left: 0.5rem;
+    }
+
+    .badge-success {
+      background-color: #dcfce7;
+      color: var(--success);
+    }
+
+    .badge-danger {
+      background-color: #fee2e2;
+      color: var(--error);
+    }
+
+    ul {
+      margin-top: 0.25rem;
+      padding-left: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Resolución de Ejercicios: Ecuaciones Racionales y con Radicales</h1>
+
+  <!-- ACTIVIDAD 28 -->
+  <h2>Actividad 28. Resuelve estas ecuaciones racionales convirtiéndolas en ecuaciones polinómicas. Comprueba las soluciones.</h2>
+
+  <!-- 28 a -->
+  <div class="exercise-card">
+    <div class="statement">a) &nbsp; <sup>1</sup>&frasl;<sub>x</sub> - <sup>5</sup>&frasl;<sub>x<sup>2</sup></sub> + <sup>6</sup>&frasl;<sub>x<sup>3</sup></sub> = 0</div>
+    
+    <div class="step-title">1. Dominio de definición:</div>
+    <p>Los denominadores no pueden ser nulos: <strong>x ≠ 0</strong>.</p>
+
+    <div class="step-title">2. Conversión a ecuación polinómica:</div>
+    <p>Multiplicamos toda la ecuación por el mínimo común múltiplo de los denominadores, <strong>m.c.m. = x<sup>3</sup></strong>:</p>
+    <div class="math-block">
+      x<sup>3</sup> · (1/x - 5/x<sup>2</sup> + 6/x<sup>3</sup>) = 0 · x<sup>3</sup><br>
+      x<sup>2</sup> - 5x + 6 = 0
+    </div>
+
+    <div class="step-title">3. Resolución de la ecuación de segundo grado:</div>
+    <div class="math-block">
+      x = [-(-5) ± √((-5)<sup>2</sup> - 4·1·6)] / (2·1)<br>
+      x = [5 ± √(25 - 24)] / 2 = (5 ± 1) / 2<br><br>
+      x<sub>1</sub> = (5 + 1) / 2 = <strong>3</strong><br>
+      x<sub>2</sub> = (5 - 1) / 2 = <strong>2</strong>
+    </div>
+
+    <div class="step-title">4. Comprobación:</div>
+    <div class="check-box valid">
+      <ul>
+        <li><strong>Para x = 3:</strong> 1/3 - 5/9 + 6/27 = 9/27 - 15/27 + 6/27 = 0/27 = 0. <span class="badge badge-success">VÁLIDA</span></li>
+        <li><strong>Para x = 2:</strong> 1/2 - 5/4 + 6/8 = 4/8 - 10/8 + 6/8 = 0/8 = 0. <span class="badge badge-success">VÁLIDA</span></li>
+      </ul>
+    </div>
+    <p><strong>Soluciones: x = 3, x = 2</strong></p>
+  </div>
+
+  <!-- 28 b -->
+  <div class="exercise-card">
+    <div class="statement">b) &nbsp; <sup>x</sup>&frasl;<sub>x+1</sub> + <sup>x+1</sup>&frasl;<sub>x</sub> = <sup>8x+1</sup>&frasl;<sub>x<sup>2</sup>+x</sub></div>
+
+    <div class="step-title">1. Dominio de definición:</div>
+    <p>Dado que x<sup>2</sup> + x = x(x + 1), las restricciones son: <strong>x ≠ 0</strong> y <strong>x ≠ -1</strong>.</p>
+
+    <div class="step-title">2. Conversión a ecuación polinómica:</div>
+    <p>El m.c.m. de los denominadores es <strong>x(x + 1) = x<sup>2</sup> + x</strong>. Multiplicamos todos los términos por este m.c.m.:</p>
+    <div class="math-block">
+      x·x + (x + 1)(x + 1) = 8x + 1<br>
+      x<sup>2</sup> + (x<sup>2</sup> + 2x + 1) = 8x + 1<br>
+      2x<sup>2</sup> + 2x + 1 = 8x + 1<br>
+      2x<sup>2</sup> - 6x = 0<br>
+      2x(x - 3) = 0
+    </div>
+
+    <div class="step-title">3. Posibles soluciones:</div>
+    <div class="math-block">
+      2x = 0  ⇒  x = 0<br>
+      x - 3 = 0  ⇒  x = 3
+    </div>
+
+    <div class="step-title">4. Comprobación:</div>
+    <div class="check-box valid">
+      <ul>
+        <li><strong>Para x = 0:</strong> Anula los denominadores (x y x<sup>2</sup>+x). <span class="badge badge-danger">NO VÁLIDA (Extraña)</span></li>
+        <li><strong>Para x = 3:</strong> 3/(3+1) + (3+1)/3 = 3/4 + 4/3 = 25/12.<br>
+            Lado derecho: (8·3 + 1)/(3<sup>2</sup> + 3) = 25/12. <span class="badge badge-success">VÁLIDA</span></li>
+      </ul>
+    </div>
+    <p><strong>Solución única: x = 3</strong></p>
+  </div>
+
+  <!-- 28 c -->
+  <div class="exercise-card">
+    <div class="statement">c) &nbsp; x<sup>3</sup> - <sup>1</sup>&frasl;<sub>x<sup>3</sup></sub> = <sup>15 624</sup>&frasl;<sub>125</sub></div>
+
+    <div class="step-title">1. Dominio y cambio de variable:</div>
+    <p>Restricción: <strong>x ≠ 0</strong>. Aplicamos el cambio de variable <strong>t = x<sup>3</sup></strong>:</p>
+    <div class="math-block">
+      t - 1/t = 15624 / 125
+    </div>
+
+    <div class="step-title">2. Conversión a ecuación polinómica:</div>
+    <p>Multiplicamos toda la ecuación por <strong>125t</strong>:</p>
+    <div class="math-block">
+      125t<sup>2</sup> - 125 = 15624t<br>
+      125t<sup>2</sup> - 15624t - 125 = 0
+    </div>
+
+    <div class="step-title">3. Resolución de la cuadrática en t:</div>
+    <div class="math-block">
+      t = [15624 ± √((-15624)<sup>2</sup> - 4·125·(-125))] / (2·125)<br>
+      t = [15624 ± √(244 109 376 + 62 500)] / 250<br>
+      t = [15624 ± √244 171 876] / 250 = (15624 ± 15626) / 250<br><br>
+      t<sub>1</sub> = 31250 / 250 = <strong>125</strong><br>
+      t<sub>2</sub> = -2 / 250 = <strong>-1 / 125</strong>
+    </div>
+
+    <div class="step-title">4. Deshacer el cambio de variable (x = <sup>3</sup>√t):</div>
+    <div class="math-block">
+      Si t = 125  ⇒  x = <sup>3</sup>√125 = <strong>5</strong><br>
+      Si t = -1/125  ⇒  x = <sup>3</sup>√(-1/125) = <strong>-1/5</strong>
+    </div>
+
+    <div class="step-title">5. Comprobación:</div>
+    <div class="check-box valid">
+      <ul>
+        <li><strong>Para x = 5:</strong> 5<sup>3</sup> - 1/5<sup>3</sup> = 125 - 1/125 = (15625 - 1)/125 = 15624/125. <span class="badge badge-success">VÁLIDA</span></li>
+        <li><strong>Para x = -1/5:</strong> (-1/5)<sup>3</sup> - 1/(-1/5)<sup>3</sup> = -1/125 + 125 = 15624/125. <span class="badge badge-success">VÁLIDA</span></li>
+      </ul>
+    </div>
+    <p><strong>Soluciones: x = 5, x = -1/5</strong></p>
+  </div>
+
+  <!-- 28 d -->
+  <div class="exercise-card">
+    <div class="statement">d) &nbsp; <sup>x-1</sup>&frasl;<sub>x</sub> + <sup>x-3</sup>&frasl;<sub>x-4</sub> = <sup>2x-3</sup>&frasl;<sub>x-1</sub></div>
+
+    <div class="step-title">1. Dominio de definición:</div>
+    <p>Restricciones: <strong>x ≠ 0</strong>, <strong>x ≠ 4</strong>, <strong>x ≠ 1</strong>.</p>
+
+    <div class="step-title">2. Conversión a ecuación polinómica:</div>
+    <p>Multiplicamos por el <strong>m.c.m. = x(x - 4)(x - 1)</strong>:</p>
+    <div class="math-block">
+      (x - 1)·(x - 4)(x - 1) + (x - 3)·x(x - 1) = (2x - 3)·x(x - 4)<br><br>
+      • (x - 1)<sup>2</sup>(x - 4) = (x<sup>2</sup> - 2x + 1)(x - 4) = x<sup>3</sup> - 6x<sup>2</sup> + 9x - 4<br>
+      • x(x - 3)(x - 1) = x(x<sup>2</sup> - 4x + 3) = x<sup>3</sup> - 4x<sup>2</sup> + 3x<br>
+      Suma Izquierda: 2x<sup>3</sup> - 10x<sup>2</sup> + 12x - 4<br><br>
+      • Lado Derecho: x(2x - 3)(x - 4) = x(2x<sup>2</sup> - 11x + 12) = 2x<sup>3</sup> - 11x<sup>2</sup> + 12x
+    </div>
+
+    <div class="step-title">3. Igualación y simplificación:</div>
+    <div class="math-block">
+      2x<sup>3</sup> - 10x<sup>2</sup> + 12x - 4 = 2x<sup>3</sup> - 11x<sup>2</sup> + 12x<br>
+      -10x<sup>2</sup> - 4 = -11x<sup>2</sup><br>
+      x<sup>2</sup> - 4 = 0  ⇒  x<sup>2</sup> = 4  ⇒  <strong>x = ±2</strong>
+    </div>
+
+    <div class="step-title">4. Comprobación:</div>
+    <div class="check-box valid">
+      <ul>
+        <li><strong>Para x = 2:</strong> (2-1)/2 + (2-3)/(2-4) = 1/2 + 1/2 = 1. L.D.: (2·2-3)/(2-1) = 1/1 = 1. <span class="badge badge-success">VÁLIDA</span></li>
+        <li><strong>Para x = -2:</strong> (-2-1)/(-2) + (-2-3)/(-2-4) = 3/2 + 5/6 = 14/6 = 7/3. L.D.: (2(-2)-3)/(-2-1) = -7/(-3) = 7/3. <span class="badge badge-success">VÁLIDA</span></li>
+      </ul>
+    </div>
+    <p><strong>Soluciones: x = 2, x = -2</strong></p>
+  </div>
+
+
+  <!-- ACTIVIDAD 29 -->
+  <h2>Actividad 29. Resuelve las siguientes ecuaciones con radicales. No olvides comprobar las soluciones.</h2>
+
+  <!-- 29 a -->
+  <div class="exercise-card">
+    <div class="statement">a) &nbsp; √(x - 1) = 13</div>
+
+    <div class="step-title">1. Elevar al cuadrado ambos miembros:</div>
+    <div class="math-block">
+      (√(x - 1))<sup>2</sup> = 13<sup>2</sup><br>
+      x - 1 = 169<br>
+      x = 169 + 1 = <strong>170</strong>
+    </div>
+
+    <div class="step-title">2. Comprobación:</div>
+    <div class="check-box valid">
+      √(170 - 1) = √169 = 13. <span class="badge badge-success">VÁLIDA</span>
+    </div>
+    <p><strong>Solución: x = 170</strong></p>
+  </div>
+
+  <!-- 29 b -->
+  <div class="exercise-card">
+    <div class="statement">b) &nbsp; √(7x - 3) = 2x - 3</div>
+
+    <div class="step-title">1. Elevar al cuadrado ambos miembros:</div>
+    <div class="math-block">
+      (√(7x - 3))<sup>2</sup> = (2x - 3)<sup>2</sup><br>
+      7x - 3 = 4x<sup>2</sup> - 12x + 9<br>
+      4x<sup>2</sup> - 19x + 12 = 0
+    </div>
+
+    <div class="step-title">2. Resolver la ecuación cuadrática:</div>
+    <div class="math-block">
+      x = [19 ± √((-19)<sup>2</sup> - 4·4·12)] / (2·4)<br>
+      x = [19 ± √(361 - 192)] / 8 = (19 ± √169) / 8 = (19 ± 13) / 8<br><br>
+      x<sub>1</sub> = (19 + 13) / 8 = 32 / 8 = <strong>4</strong><br>
+      x<sub>2</sub> = (19 - 13) / 8 = 6 / 8 = <strong>3/4</strong>
+    </div>
+
+    <div class="step-title">3. Comprobación:</div>
+    <div class="check-box valid">
+      <ul>
+        <li><strong>Para x = 4:</strong> √(7·4 - 3) = √25 = 5. L.D.: 2(4) - 3 = 5. (5 = 5) <span class="badge badge-success">VÁLIDA</span></li>
+        <li><strong>Para x = 3/4:</strong> √(7(3/4) - 3) = √(9/4) = 3/2. L.D.: 2(3/4) - 3 = 6/4 - 3 = -3/2. (3/2 ≠ -3/2) <span class="badge badge-danger">NO VÁLIDA (Falsa)</span></li>
+      </ul>
+    </div>
+    <p><strong>Solución única: x = 4</strong></p>
+  </div>
+
+  <!-- 29 c -->
+  <div class="exercise-card">
+    <div class="statement">c) &nbsp; x + √(10x - 4) = 10</div>
+
+    <div class="step-title">1. Aislar el radical y elevar al cuadrado:</div>
+    <div class="math-block">
+      √(10x - 4) = 10 - x<br>
+      (√(10x - 4))<sup>2</sup> = (10 - x)<sup>2</sup><br>
+      10x - 4 = 100 - 20x + x<sup>2</sup><br>
+      x<sup>2</sup> - 30x + 104 = 0
+    </div>
+
+    <div class="step-title">2. Resolver la ecuación cuadrática:</div>
+    <div class="math-block">
+      x = [30 ± √((-30)<sup>2</sup> - 4·1·104)] / 2<br>
+      x = [30 ± √(900 - 416)] / 2 = (30 ± √484) / 2 = (30 ± 22) / 2<br><br>
+      x<sub>1</sub> = (30 + 22) / 2 = 52 / 2 = <strong>26</strong><br>
+      x<sub>2</sub> = (30 - 22) / 2 = 8 / 2 = <strong>4</strong>
+    </div>
+
+    <div class="step-title">3. Comprobación:</div>
+    <div class="check-box valid">
+      <ul>
+        <li><strong>Para x = 26:</strong> 26 + √(10·26 - 4) = 26 + √256 = 26 + 16 = 42 ≠ 10. <span class="badge badge-danger">NO VÁLIDA (Falsa)</span></li>
+        <li><strong>Para x = 4:</strong> 4 + √(10·4 - 4) = 4 + √36 = 4 + 6 = 10. (10 = 10) <span class="badge badge-success">VÁLIDA</span></li>
+      </ul>
+    </div>
+    <p><strong>Solución única: x = 4</strong></p>
+  </div>
+
+  <!-- 29 d -->
+  <div class="exercise-card">
+    <div class="statement">d) &nbsp; √(x - 5) + √(3x + 7) = 10</div>
+
+    <div class="step-title">1. Aislar un radical y elevar al cuadrado (1.ª vez):</div>
+    <div class="math-block">
+      √(3x + 7) = 10 - √(x - 5)<br>
+      (√(3x + 7))<sup>2</sup> = (10 - √(x - 5))<sup>2</sup><br>
+      3x + 7 = 100 - 20√(x - 5) + (x - 5)<br>
+      3x + 7 = 95 + x - 20√(x - 5)
+    </div>
+
+    <div class="step-title">2. Aislar el segundo radical y simplificar:</div>
+    <div class="math-block">
+      20√(x - 5) = 88 - 2x<br>
+      10√(x - 5) = 44 - x   (dividiendo por 2)
+    </div>
+
+    <div class="step-title">3. Elevar al cuadrado (2.ª vez):</div>
+    <div class="math-block">
+      (10√(x - 5))<sup>2</sup> = (44 - x)<sup>2</sup><br>
+      100(x - 5) = 1936 - 88x + x<sup>2</sup><br>
+      100x - 500 = x<sup>2</sup> - 88x + 1936<br>
+      x<sup>2</sup> - 188x + 2436 = 0
+    </div>
+
+    <div class="step-title">4. Resolver la ecuación cuadrática:</div>
+    <div class="math-block">
+      x = [188 ± √((-188)<sup>2</sup> - 4·1·2436)] / 2<br>
+      x = [188 ± √(35344 - 9744)] / 2 = (188 ± √25600) / 2 = (188 ± 160) / 2<br><br>
+      x<sub>1</sub> = (188 + 160) / 2 = 348 / 2 = <strong>174</strong><br>
+      x<sub>2</sub> = (188 - 160) / 2 = 28 / 2 = <strong>14</strong>
+    </div>
+
+    <div class="step-title">5. Comprobación:</div>
+    <div class="check-box valid">
+      <ul>
+        <li><strong>Para x = 174:</strong> √(174 - 5) + √(3·174 + 7) = √169 + √529 = 13 + 23 = 36 ≠ 10. <span class="badge badge-danger">NO VÁLIDA (Falsa)</span></li>
+        <li><strong>Para x = 14:</strong> √(14 - 5) + √(3·14 + 7) = √9 + √49 = 3 + 7 = 10. (10 = 10) <span class="badge badge-success">VÁLIDA</span></li>
+      </ul>
+    </div>
+    <p><strong>Solución única: x = 14</strong></p>
+  </div>
+
+</div>
+
+</body>
+</html>
